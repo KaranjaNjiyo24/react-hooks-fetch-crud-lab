@@ -14,11 +14,6 @@ function App() {
       .then((data) => setQuestions(data))
   }, [])
 
-  function handleQuestionsAnswered(correct) {
-    if (page === "Form") {
-      setPage("List")
-    }
-  }
 
   function addQuestion(newQuestion) {
     setQuestions((questions) => [...questions, newQuestion])
